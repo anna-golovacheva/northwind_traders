@@ -1,4 +1,4 @@
-##Northwind traders##
+## Northwind traders ##
 
 - Run *main* to upload sql commands to files.
 - Run files content in terminal, for example CMD, to use it and work with database.
