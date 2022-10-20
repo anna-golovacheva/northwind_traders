@@ -48,7 +48,7 @@ def create_and_fill_new_table(file_name: str, val_list: list) -> str:
     """
     Записывает код в sql файл для создания таблицы и заполнения ее данными.
     """
-    with open(file_name, 'a', encoding='utf-8') as sql_file_1:
+    with open(file_name, 'w', encoding='utf-8') as sql_file_1:
         settings = f"SET statement_timeout = 0;\n" \
                    f"SET lock_timeout = 0;\n" \
                    f"SET client_encoding = 'UTF8';\n" \
@@ -90,7 +90,7 @@ def refactor_existing_table(file_name: str, data_list: list):
     Записывает код в sql файл для создания нового поля уже существующей таблицы и
     заполнения ее данными.
     """
-    with open(file_name, 'a', encoding='utf-8') as sql_file_2:
+    with open(file_name, 'w', encoding='utf-8') as sql_file_2:
         settings = f"SET statement_timeout = 0;\n" \
                    f"SET lock_timeout = 0;\n" \
                    f"SET client_encoding = 'UTF8';\n" \
